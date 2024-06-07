@@ -14,16 +14,17 @@ public:
     ~BoardState();
 
     // Methods
-    int  SDLinit();
-    int  renderBoard();
+    int SDLinit();
+    int renderBoard();
 
     // Helper Functions
     void initializeBoard();
     void initPiece(const std::string& type, Team team, int x, int y);
 
     void setPiece(int x, int y, std::unique_ptr<ChessPiece> piece);
-    void movePiece(int startX, int startY, int endX, int endY); // Added method for piece movement
+    bool movePiece(int startX, int startY, int endX, int endY); 
     void setPosition(int gridX, int gridY, int x, int y);
+    bool isPathClear(int startX, int startY, int endX, int endY);
 
     // Accessors
     SDL_Window* window() const noexcept;
@@ -41,5 +42,6 @@ private:
     SDL_Window* _window;
     SDL_Renderer* _renderer;
 
+    Team currentTurn;
     std::unique_ptr<ChessPiece> _board[8][8]; // The board holding chess pieces
 };

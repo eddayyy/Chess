@@ -14,6 +14,9 @@ Rook::~Rook() {}
 /*******************************************************************************
 **  Public methods
 *******************************************************************************/
-bool Rook::isLegalMove(int startX, int startY, int endX, int endY) {
+bool Rook::isLegalMove(int startX, int startY, int endX, int endY, const std::unique_ptr<ChessPiece> board[8][8]) {
+    if (startX != endX && startY != endY) {
+        return false;
+    }
     return true;
 }
