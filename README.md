@@ -16,33 +16,27 @@
 
 ## 🌟 Overview
 
-**Chess Engine** is a C++ based application designed to simulate a chess environment where users can play against another player. The game utilizes SDL for rendering the chess board and pieces, and follows object-oriented principles to manage the game state and piece movements.
+**Chess Engine** is a C++ based application designed to simulate a chess environment where users can play against another player. The game utilizes the Simple Directmedia Layer framework to render the chess board and pieces. This project heavily involved Object Oriented Programming to control the game state, each piece's movement mechanics at any given position, and turn taking.
+
+This project is a combination of my passion for Software Development and Chess. I have enjoyed both playing chess and programming ever since I first picked them up, and I find it fascinating how each of them offer their own unique complexities and abstractions. I was inspired by [Gotham Chess](https://youtube.com/gothamchess) to create this application. My future plan for this passion project is to add algorithms that can evaluate the board state and make moves of their own.
 
 ## **Features and Demo**
 
-### Feature 1: Player vs. Player Mode
-
-- **Description**: Allows two players to compete in a classic game of chess, taking turns to move pieces across the board in real-time.
-
-  - **Screenshot**:
-
-    ![Feature 1 Screenshot](./data/media/player-vs-player-demo.png)
-
-### Feature 2: Piece Movement and Rules
-
-- **Description**: Each piece adheres to standard chess movement rules. For example, the Bishop can only move diagonally, while the King can move one square in any direction.
-
-  - **Screenshot**:
-
-    ![Feature 2 Screenshot](./data/media/piece-movement-demo.png)
-
-### Feature 3: Graphical User Interface
+### Feature 1: Graphical User Interface
 
 - **Description**: The chessboard and pieces are graphically rendered using SDL, providing a visually appealing interface for players.
 
   - **Screenshot**:
 
-    ![Feature 3 Screenshot](./data/media/gui-demo.png)
+    ![Feature 1 Screenshot](./media/feature1.png)
+
+### Feature 2: Piece Movement and Rules
+
+- **Description**: Each piece's movement logic follows standard chess movement rules. For example, the Bishop can only move diagonally, while the King can move one square in any direction.
+
+  - **Screenshot**:
+
+    ![Feature 2 Screenshot](./media/feature2.png)
 
 ## 📄 License
 
